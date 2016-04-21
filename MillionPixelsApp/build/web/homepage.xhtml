@@ -18,8 +18,10 @@ and open the template in the editor.
         <h:form>
             <p:growl id="messages"/>
             <p:menubar>
+                <p:menuitem value ="Home" url ="homepage.xhtml"/>
                 <p:menuitem value="FMSC Website" url="https://www.fmsc.org/" />
                 <p:menuitem value="About Us" url="aboutus.xhtml" />
+                <p:menuitem value ="Donate" url="donate.xhtml"/>
                 <f:facet name="options">
                     <p:commandButton value="Sign In" onclick="PF('dlg2').show();" rendered="#{!userController.isLoggedin()}"/>
                     <p:commandButton value="Sign Up" onclick="PF('dlg').show();" rendered="#{!userController.isLoggedin()}"/>
